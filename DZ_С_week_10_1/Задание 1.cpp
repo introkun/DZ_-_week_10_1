@@ -4,11 +4,10 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "Russian");
 	long mass[10][2];
 	int userEnter;
 	long buff;
-	cout << "¬ведите число.ю с которого начнетс€ массив: ";
+	cout << "Vvedite chislo, s kotorogo nachnetsia massiv: ";
 	cin >> userEnter;
 	mass[0][0] = userEnter;
 	for (int i = 0; i < 2; i++)
