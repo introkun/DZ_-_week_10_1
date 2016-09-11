@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+	// используйте константы для размерности массива
 	long mass[10][2];
 	int userEnter;
 	long buff;
