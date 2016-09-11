@@ -4,15 +4,17 @@ using namespace std;
 
 int main()
 {
-	long mass[10][2];
+	int const rowCount = 10;
+	int const colCount = 2;
+	long mass[rowCount][colCount];
 	int userEnter;
 	long buff;
 	cout << "Vvedite chislo, s kotorogo nachnetsia massiv: ";
 	cin >> userEnter;
 	mass[0][0] = userEnter;
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < colCount; i++)
 	{
-		for (int j = 0; j < 10; j++)
+		for (int j = 0; j < rowCount; j++)
 		{
 			if (j == 0 && i == 0)
 			{
@@ -27,10 +29,10 @@ int main()
 		}
 	}
 	cout << "mass[10][2] = ";
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < colCount; i++)
 	{
 		cout << "{";
-		for (int j = 0; j < 10; j++)
+		for (int j = 0; j < rowCount; j++)
 		{
 			cout << mass[j][i] << ", ";
 		}
